@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title>Bootstrap 实例</title>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="xiecheng.js" type="text/javascript" charset="utf-8"></script>
+ 	<link rel="stylesheet" type="text/css" href="xiecheng.css"/>
+</head>
+<body>
+
+<div id="main-page">
+  	<div class="search-box"> 		
+  		<form  method="post">
+  				<input class="input-search" type="search" placeholder="搜索：目的地/酒店/景点/航班号" onclick="turn()"/>
+  		</form>
+  		<span class="glyphicon glyphicon-search search1"></span>
+  		<div class="usericon-box"><span class="glyphicon glyphicon-user user-head"></span></div>
+  		<div id="user-box"> <p id="my">我的</p> </div>
+  	</div>
+	<div class="turnpics-box">
+		<img class="turnpic" src="../imags/x1.jpg"/>
+		<img class="turnpic" src="../imags/x2.jpg"/>
+		<img class="turnpic" src="../imags/x2.jpg"/>
+		<img class="turnpic" src="../imags/x3.jpg"/>
+		<img class="turnpic" src="../imags/x4.jpg"/>
+		<img class="turnpic" src="../imags/x5.jpg"/>
+		<img class="turnpic" src="../imags/x6.jpg"/>
+		<img class="turnpic" src="../imags/x7.jpg"/>
+	</div>
+	<div class="flex-container">
+		<div class="flex-item">景点玩乐</div>
+		<div class="flex-item">周边游</div>
+		<div class="flex-item">美食林</div>
+		<div class="flex-item">一日游</div>
+		<div class="flex-item">当地攻略</div>
+	</div>
+<div class="table-box ">
+	<table cellspacing="1 ">
+		<colgroup  width="30%" ></colgroup>
+		<colgroup  width="35%" ></colgroup>
+		<colgroup  width="35%" ></colgroup>
+		<tr>
+			<td rowspan="2" class="raw-12" style="border-top-left-radius:10px">酒店</td>
+			<td class="raw-12">海外酒店</td>
+			<td class="raw-12"  style="border-top-right-radius:10px">团购</td>
+		</tr>
+		<tr>
+			<td class="raw-12">特价酒店</td>
+			<td class="raw-12">民宿·客栈</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="raw-34">机票</td>
+			<td class="raw-34">火车票</td>
+			<td class="raw-34">汽车票·船票</td>
+		</tr>
+		<tr>
+			<td class="raw-34">特价机票</td>
+			<td class="raw-34">专车·租车</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="raw-56" style="border-bottom-left-radius:10px">旅游</td>
+			<td class="raw-56">门票</td>
+			<td class="raw-56">游轮旅行</td>
+		</tr>
+		<tr>
+			<td class="raw-56">目的地攻略</td>
+			<td class="raw-56" style="border-bottom-right-radius:10px">定制旅行</td>
+		</tr>
+	</table>
+</div>
+<div class="flex-container">
+	<div class="flex-item">WIFI电话卡</div>
+	<div class="flex-item">保险·签证</div>
+	<div class="flex-item">外币兑换</div>
+	<div class="flex-item">购物</div>
+	<div class="flex-item">当地向导</div>
+	<div class="flex-item">自由行</div>
+	<div class="flex-item">境外玩乐</div>
+	<div class="flex-item">礼品卡</div>
+	<div class="flex-item">信用卡</div>
+	<div class="flex-item">更多</div>
+</div>
+<div class="hot-act row">
+	<div class="col-md-4"> <i>热门活动</i></div>
+	<div class="col-md-4 col-md-offset-4"> 
+		<span class="getmore">获取更多福利</span> 
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</div>	
+</div>
+<div class="show-pics" >
+	<img src="../imags/pic1.jpg"/>
+	<img src="../imags/pic2.jpg"/>
+	<img src="../imags/pic3.jpg"/>
+	<img src="../imags/pic4.jpg"/>
+	<img src="../imags/pic5.jpg"/>
+	<img src="../imags/pic6.jpg"/>
+</div>
+<div class="footer row">
+	<div class="col-md-4">电话预订
+		<span class="glyphicon glyphicon-earphone" ></span>
+	</div>
+	<div class="col-md-4">
+		下载客户端
+		<span class="glyphicon glyphicon-download-alt" ></span>
+	</div>
+	<div class="col-md-4">我的
+		<span class="glyphicon glyphicon-user user-foot" ></span>
+	</div>
+</div>
+</div>
+<div id="search-page" style="display: none;">
+	<div class="search-box2"> 		 		
+		<form method="post">		
+			<input class="input-search2" type="search" onclick="turn()" />
+		</form>
+		<div class="font-search"><p>搜索</p></div>
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="glyphicon glyphicon-search search2"></span>
+		<span class="glyphicon glyphicon-remove"></span>
+  	</div>
+	<div class="recommend">
+	  	<p>下载携程app 专享优惠低至 <span style="color: red;">50%</span></p>
+	</div>
+	<div class="hot-topic">
+	  	热门搜索
+	</div>
+	<div class="list-unstyled">		
+		<div class="row">
+  	    	<div class="col-md-4" >酒店</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+	    </div>
+		<div class="row">
+  	    	<div class="col-md-4" >优惠券</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>
+		<div class="row">
+  	    	<div class="col-md-4" >签证</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>
+		<div class="row">
+  	    	<div class="col-md-4" >旅游</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>	
+		<div class="row">
+  	    	<div class="col-md-4" >WIFI</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>
+		<div class="row">
+  	    	<div class="col-md-4" >机票</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>		
+		<div class="row">
+  	    	<div class="col-md-4" >攻略</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>
+		<div class="row">
+  	    	<div class="col-md-4" >门票</div>
+  	    	<div class="col-md-1 col-md-offset-7">↖</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

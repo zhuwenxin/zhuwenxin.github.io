@@ -2,6 +2,7 @@ function quickSort(arr, start, end) {
  2     if (start > end) {
  3         return;
  4     }
+       //let变量作用域在包含它的块内
  5     let i = start,
  6         j = end,
  7         pivot = arr[start]; //存放基准数

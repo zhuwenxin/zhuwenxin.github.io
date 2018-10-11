@@ -12,6 +12,7 @@ function merge(left, right) {
 }
 
 function mergeSort(a) {
+  //如果数组长度小于1，那么就不用进行排序了，直接返回数组：
   if (a.length === 1) 
     return a;
 

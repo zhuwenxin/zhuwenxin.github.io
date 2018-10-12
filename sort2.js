@@ -13,7 +13,7 @@ function merge(left, right) {
     else
       tmp.push(right.shift());
   }
-
+  //当left和right中有一个为空时就和tmp连接起来
   return tmp.concat(left, right);
 }
 

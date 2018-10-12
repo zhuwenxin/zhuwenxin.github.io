@@ -6,7 +6,7 @@
 */
 function merge(left, right) {
   var tmp = [];
-
+//合并的过程就是，每次从待合并的两个子数组中选取一个最小的元素，然后把这个元素放到合并后的数组中
   while (left.length && right.length) {
     if (left[0] < right[0])
       tmp.push(left.shift());

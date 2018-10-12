@@ -28,7 +28,7 @@ function quickSort(arr, start, end) {
 21             arr[j] = tmp;
 22         }
 23     }
-24     // 最后把基准数归位
+24     // 当i和j相等时交换基准数和arr[start]
 25     arr[start] = arr[i];
 26     arr[i] = pivot;
 27     // 递归处理左边
